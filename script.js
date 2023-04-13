@@ -9,7 +9,7 @@ function createTable() {
 
     for (let j = 0; j < cn; j++) {
       const cell = document.createElement('td');
-      const cellText = document.createTextNode(`Row ${i}, Column ${j}`);
+      const cellText = document.createTextNode(`Row${i}, Column${j}`);
       cell.appendChild(cellText);
       row.appendChild(cell);
     }
