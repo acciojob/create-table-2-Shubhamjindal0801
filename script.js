@@ -9,11 +9,12 @@ function createTable() {
 
     for (let j = 0; j < cn; j++) {
       const cell = document.createElement('td');
-      const cellText = document.createTextNode(`Row-${Math.floor(i / 2)} Column-${i % 2}`);
-      cell.appendChild(cellText);
+      const cellText = document.createTextNode(`Row-${i} Column-${j}`);
       row.appendChild(cell);
+		cell.appendChild(cellText);
+      
     }
-//
+//Row-${Math.floor(index / 2)} Column-${index % 2}
     myTable.appendChild(row);
   }
 }
